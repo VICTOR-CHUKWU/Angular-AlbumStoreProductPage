@@ -14,7 +14,7 @@ export class ProductDescriptionComponent implements OnInit {
   constructor(private_productService: ProductService) { }
 
   ngOnInit() {
-    this._productService.getAlbum(1).suscribe(response =>
+    this._ProductService.getAlbum(1).suscribe(response =>
       this.albumInfo = response);
   }
 
